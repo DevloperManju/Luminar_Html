@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container mt-4 bg-light rounded pt-5 pb-5">
+        <h2 class="text-center text-success"><u>User Detailes</u></h2>
+
+        <form action="" class="container">
+            <div class=" mb-3 mt-2">
+                <label class="text-success form-label" for="name">Name:</label>
+                <input class="form-control text-primary" type="text" placeholder="Enter your name" name="name"
+                    required />
+            </div>
+            <div class=" mb-3 mt-2">
+                <label class="text-success form-label" for="email">Email:</label>
+                <input class="form-control text-primary" type="email" name="email" placeholder="Enter your email"
+                    required />
+            </div>
+            <div class=" mb-3 mt-2">
+                <label class="text-success form-label" for="password">Password:</label>
+                <input class="form-control text-primary" type="email" name="password" placeholder="Enter your password"
+                    required />
+            </div>
+            <div class=" mb-3 mt-2">
+                <label class="text-success form-label" for="address">Address:</label>
+                <textarea rows="4" class="form-control text-primary" type="text" name="address"
+                    placeholder="Enter your address" required></textarea>
+            </div>
+            <div class=" mb-3 mt-2">
+                <div class="form-group row">
+                    <div class=" form-outline mb-3 mt-2 w-25 mr-2">
+                        <label class="text-success form-label" for="password">code:</label>
+                        <input class="form-control text-primary" type="tel" min="2" max="2" pattern="\d{2}" name="code"
+                            placeholder="Enter your code" required />
+                    </div>
+                    <div class="form-outline mb-3 mt-2 w-50 ">
+                        <label class="text-success form-label" for="password">Number:</label>
+                        <input class="form-control text-primary" type="number" name="number"
+                            placeholder="Enter your number" required />
+                    </div>
+                </div>
+            </div>
+
+            <div class=" mb-3 mt-2">
+                <label class="text-success form-label" for="address">Select district:</label>
+                <select class="form-select" name="dist" id="sdist" for="sel1">
+                    <option selected disabled>--select--</option>
+                    <option value="">Thrissur</option>
+                    <option value="">Palakkad</option>
+                    <option value="">Kottayam</option>
+                    <option value="">Ernakulam</option>
+                </select>
+            </div>
+
+            <div class=" mb-3 mt-2 w-50">
+                <label class="text-success form-label" for="email">Color:</label>
+                <input class="form-control text-primary" type="color" name="Color" placeholder="" required />
+            </div>
+
+            <div class=" mb-3 mt-2">
+                <label class="text-success form-label" for="address">Select Qualification:</label>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="SSLC" checked>
+                    <label for="check1" class="form-check-label">SSLC</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="Plus Two">
+                    <label for="check1" class="form-check-label">Plus Two</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="Btech">
+                    <label for="check1" class="form-check-label">Btech</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="Mtech">
+                    <label for="check1" class="form-check-label">Mtech</label>
+                </div>
+            </div>
+
+
+            <div class=" mb-3 mt-2">
+                <label class="text-success form-label" for="address">Select Qualification:</label>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="check1" name="option1" value="SSLC" checked>
+                    <label for="check1" class="form-check-label">SSLC</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="check2" name="option1" value="Plus Two">
+                    <label for="check2" class="form-check-label">Plus Two</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="check3" name="option1" value="Btech">
+                    <label for="check3" class="form-check-label">Btech</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="check4" name="option1" value="Mtech">
+                    <label for="check4" class="form-check-label">Mtech</label>
+                </div>
+
+
+            </div>
+            <button type="submit" class="btn btn-primary">Apply</button>
+        </form>
+
+    </div>
+
+</body>
+
+</html>

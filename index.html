@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .list {
+            display: flex;
+            gap: 10px;
+
+        }
+    </style>
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+    <h1>Heading</h1>
+    <h2>Heading</h2>
+    <h3>Heading</h3>
+    <h4>Heading</h4>
+    <h5>Heading</h5>
+    <h6>Heading</h6>
+    <p>Page layouts look better with something in each section. Web page designers, content writers, and layout artists
+        use lorem ipsum, also known as placeholder copy, to distinguish which areas on a page will hold advertisements,
+        editorials, and filler before the final written content and website designs receive client approval.</p>
+
+    <ul type="circle">
+        <li>Red</li>
+        <li>blue</li>
+        <li>green</li>
+    </ul>
+    <ul type="square">
+        <li>Red</li>
+        <li>blue</li>
+        <li>green</li>
+    </ul>
+    <ul type="none">
+        <li>Red</li>
+        <li>blue</li>
+        <li>green</li>
+    </ul>
+
+    <ol type="">
+        <li>Red</li>
+        <li>blue</li>
+        <li>green</li>
+    </ol>
+    <ol type="A">
+        <li>Red</li>
+        <li>blue</li>
+        <li>green</li>
+    </ol>
+    <ol type="I">
+        <li>Red</li>
+        <li>blue</li>
+        <li>green</li>
+    </ol>
+    <dl>
+        <dt>milk</dt>
+        <dl>Milk is white</dl>
+        <dt>sky</dt>
+        <dl>sky is blue</dl>
+        <dt>blood</dt>
+        <dl>blood is red</dl>
+    </dl>
+    <dl>
+        <dt><b><i><u>milk</u></i></b></dt>
+        <dl>Milk is white</dl>
+
+    </dl>
+
+    <a href="https://www.flipkart.com/" target="_blank">Click here</a>
+
+    <p>This site is for shopping what you need.<a href="https://www.flipkart.com/" target="_blank">Click here</a></p>
+    <img src="/img/WhatsApp Image 2025-09-07 at 16.32.19_1fe3862c.jpg" alt="mobile" height="200px" width="200px" />
+
+    <a href="https://www.flipkart.com/" target="_blank"> <img
+            src="/img/WhatsApp Image 2025-09-07 at 16.32.19_1fe3862c.jpg" alt="mobile" height="200px"
+            width="200px" /></a>
+
+
+    <div>
+        <audio controls>
+            <source src="/img/mixkit-scared-horse-neighing-85.wav" type="audio/wav" />
+        </audio>
+    </div>
+
+    <div>
+        <video controls autoplay loop height="300px" width="300px">
+            <source src="/img/14294674_3840_2160_24fps.mp4" type="video/mp4" />
+        </video>
+    </div>
+
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Address</th>
+            <th colspan="2">number</th>
+        </tr>
+        <tr>
+            <td>Akhil</td>
+            <td>27</td>
+            <td>Manappully</td>
+            <td>1234</td>
+            <td>1234</td>
+        </tr>
+        <tr>
+            <td>Manju</td>
+            <td>26</td>
+            <td>Manappully</td>
+            <td>12244</td>
+            <td>1234</td>
+
+        </tr>
+
+    </table>
+
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <td>Akhil</td>
+            <td>Manju</td>
+        </tr>
+        <tr>
+            <th>Age</th>
+
+            <td>27</td>
+            <td>26</td>
+
+
+
+        </tr>
+        <tr>
+            <th>Address</th>
+            <td>Manappully</td>
+            <td>Kizhakkumuri</td>
+        </tr>
+        <tr>
+            <th rowspan="2">number</th>
+            <td>12249994</td>
+            <td>1234</td>
+
+        </tr>
+        <tr>
+            <td>123456</td>
+            <td>1234</td>
+        </tr>
+
+    </table>
+    <div
+        style="text-align: right; padding: 10px; border: 2px solid red; border-radius: 20px; width: 450px; display: flex; flex-direction:column; justify-content: space-between; background-color: rgb(234, 126, 111);">
+        <h1 style="text-align: center;">Form Submission</h1>
+        <center>
+            <form id="#form" action="/index1.html" method="post"
+                style="display: flex; flex-direction: column; gap: 10px;">
+                <div class="list">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name1" placeholder="enter name" required />
+                    <br>
+                </div>
+                <div class="list">
+                    <label for="password">password</label>
+                    <input type="password" id="password" name="password1" placeholder="enter password" required />
+                    <br>
+                </div>
+                <div class="list">
+                    <label for="Address">Address</label>
+                    <textarea name="address" id="address" placeholder="enter address"></textarea>
+                    <br>
+                </div>
+                <div class="list">
+                    <label for="Number">Number:</label>
+                    <input type="number" min="18" max="50" placeholder="number" />
+                    <br>
+                </div>
+                <div class="list">
+                    <label for="Date">Date:</label>
+                    <input type="date" id="date" placeholder="" />
+                    <br>
+                </div>
+                <div class="list">
+                    <label for="Email">Email:</label>
+                    <input type="email" id="email" placeholder="enter email" />
+                    <br>
+                </div>
+                <div class="list">
+                    <label for="Phone">Phone:</label>
+                    <input type="tel" id="phone" placeholder="enter phone" pattern="\d{10}" />
+                    <br>
+                </div>
+                <div class="list">
+                    <label for="Phone">Gender:</label>
+                    <input type="radio" id="female" value="Male" name="rb" />Female<input type="radio" id="male"
+                        value="Male" name="rb" />Male
+                    <br>
+                </div>
+                <div class="list">
+                    <label for="Phone">Qualification:</label>
+                    <input type="checkbox" id="cb1" value="SSLC" name="cb1" />SSLC<input type="checkbox" id="cb1"
+                        value="PLUSTWO" name="cb2" />PLUSTWO
+                    <br>
+                </div>
+                <div class="list">
+                    <label for="Phone">Image:</label>
+                    <input type="file" id="fileupload" name="file1" />
+                    <br>
+                </div>
+                <div class="list">
+                    <label for="Phone">State:</label>
+                    <select name="ddl" id="">
+                        <option disabled selected>Select</option>
+                        <option>Kerala</option>
+                        <option>Tamilnadu</option>
+                        <option>Karnataka</option>
+                    </select>
+                    <br>
+                </div>
+                <div class="list">
+                    <button type="submit">click</button>
+                </div>
+            </form>
+
+        </center>
+    </div>
+
+</body>
+
+</html>
